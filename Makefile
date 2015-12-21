@@ -6,7 +6,7 @@
 #    By: vthomas <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/23 14:39:19 by vthomas           #+#    #+#              #
-#    Updated: 2015/12/21 16:33:36 by vthomas          ###   ########.fr        #
+#    Updated: 2015/12/21 18:56:45 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,8 @@ SRC_NAME= ft_memset.c\
 	ft_putendl_fd.c\
 	ft_putnbr_fd.c
 OBJ_PATH = ./obj/
-INC_PATH = ./include/
+INC_PATH = ./
+INC_NAME = libft.h
 INC = $(addprefix -I, $(INC_PATH))
 CC = gcc
 CFLAGS = -Werror -Wall -Wextra
@@ -95,23 +96,20 @@ fclean: clean
 
 re: fclean all
 
-test: scrclr re
+test: re
+	@clear
 	$(CC) $(CFLAGS) $(INC) main.c $(LIB)
+	@clear
 	./a.out | cat -e
 	@/bin/rm -rf a.out
 	@/bin/rm -rf $(OBJ)
 	@/bin/rm -rf $(LIB)
 
-testclr: fclean
-	@/bin/rm -f a.out testme
-	@rmdir -p $(OBJ_PATH)
-
-scrclr:
-	clear
-
-norme: scrclr
+norme:
+	@clear
 	@norminette $(SRC) $(INC_PATH)*.h
 
 git:
 	git add $(SRC)
 	git add $(addprefix $(INC_PATH),$(INC_NAME))
+	git add ./Makefile
