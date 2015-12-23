@@ -6,7 +6,7 @@
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 20:40:03 by vthomas           #+#    #+#             */
-/*   Updated: 2015/12/20 17:56:21 by vthomas          ###   ########.fr       */
+/*   Updated: 2015/12/23 20:56:25 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,10 @@ char	*ft_strrchr(const char *s, int c)
 	while (index != 0 && s[index] != (char)c)
 		index--;
 	if (s[index] == c)
+	{
+		if (c == 0)
+			index--;
 		return ((char *)s + index);
+	}
 	return (0);
 }

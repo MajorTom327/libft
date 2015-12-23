@@ -6,7 +6,7 @@
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/20 18:35:46 by vthomas           #+#    #+#             */
-/*   Updated: 2015/12/20 19:23:08 by vthomas          ###   ########.fr       */
+/*   Updated: 2015/12/23 21:20:12 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int	f_search(const char *s1, const char *s2, size_t i_s1, size_t len)
 	{
 		i_s1++;
 		i_s2++;
-		if (i_s2 == len && i_s2 <= ft_strlen(s2))
+		if (i_s2 == ft_strlen(s2) && i_s2 <= ft_strlen(s2))
 			return (1);
 	}
 	return (0);

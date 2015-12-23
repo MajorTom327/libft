@@ -6,7 +6,7 @@
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 19:58:41 by vthomas           #+#    #+#             */
-/*   Updated: 2015/11/25 19:58:44 by vthomas          ###   ########.fr       */
+/*   Updated: 2015/12/23 19:36:36 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ char	*ft_strncpy(char *dest, const char *src, size_t n)
 	{
 		dest[i] = src[i];
 		i++;
-		dest[i] = '\0';
 	}
 	while (i < n)
 	{
