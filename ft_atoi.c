@@ -6,7 +6,7 @@
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/02 04:07:31 by vthomas           #+#    #+#             */
-/*   Updated: 2015/12/23 20:39:51 by vthomas          ###   ########.fr       */
+/*   Updated: 2015/12/23 21:24:31 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,19 +41,6 @@ static int	get_sign(const char *str)
 	while (str[i] == ' ' || str[i] == '\v' || str[i] == '\t' || str[i] == '\r'
 				|| str[i] == '\f' || str[i] == '\n')
 		i++;
-	/*
-	while (i <= ft_strlen(str))
-	{
-		if (str[i] == '-')
-			cur_sign *= -1;
-		else if (str[i] == '+')
-			cur_sign *= 1;
-		else if (str[i] >= '0' && str[i] <= '9')
-			return (cur_sign);
-		else
-			return (0);
-		i++;
-	}*/
 	if (str[i] == '-' && ft_isdigit(str[i + 1]) == 1)
 		return (-1);
 	else if (str[i] == '+' && ft_isdigit(str[i + 1]) == 1)
@@ -62,7 +49,6 @@ static int	get_sign(const char *str)
 		return (1);
 	return (0);
 }
-
 
 int			ft_atoi(const char *str)
 {
