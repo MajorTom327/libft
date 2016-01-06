@@ -6,7 +6,7 @@
 #    By: vthomas <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/23 14:39:19 by vthomas           #+#    #+#              #
-#    Updated: 2015/12/23 21:38:45 by vthomas          ###   ########.fr        #
+#    Updated: 2016/01/06 18:09:59 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -114,3 +114,6 @@ git:
 	git add $(SRC)
 	git add $(addprefix $(INC_PATH),$(INC_NAME))
 	git add ./Makefile
+	git add ./auteur
+
+.PHONY: fclean clean

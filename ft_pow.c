@@ -6,13 +6,15 @@
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/23 21:32:41 by vthomas           #+#    #+#             */
-/*   Updated: 2015/12/23 21:40:35 by vthomas          ###   ########.fr       */
+/*   Updated: 2016/01/06 16:45:04 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_pow(int nb, int pow)
 {
-	if (pow > 1 )
+	if (pow > 1)
 		return (nb * ft_pow(nb, pow - 1));
 	return (nb);
 }
