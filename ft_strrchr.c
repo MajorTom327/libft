@@ -6,7 +6,7 @@
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 20:40:03 by vthomas           #+#    #+#             */
-/*   Updated: 2016/01/06 19:46:31 by vthomas          ###   ########.fr       */
+/*   Updated: 2016/01/06 20:58:25 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strrchr(const char *s, int c)
 	if (s[index] == c)
 	{
 		if (c == '\0')
-			return ((char *)s  + ((s[index - 1] == c) ? index - 1 : index));
+			return ((char *)s + ((s[index - 1] == c) ? index - 1 : index));
 		else
 			return ((char *)s + index);
 	}

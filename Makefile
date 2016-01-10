@@ -6,7 +6,7 @@
 #    By: vthomas <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/23 14:39:19 by vthomas           #+#    #+#              #
-#    Updated: 2016/01/06 18:09:59 by vthomas          ###   ########.fr        #
+#    Updated: 2016/01/10 16:13:44 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,32 +79,32 @@ LIB_PATH = ./
 LIB = $(addprefix $(LIB_PATH),$(LIB_NAME))
 
 all: $(NAME)
-$(NAME): $(OBJ)
-	ar rc $(LIB) $(OBJ)
-	ranlib $(LIB)
+$(NAME): $(OBJ) $(LIB)
 
 $(OBJ_PATH)%.o: $(SRC_PATH)%.c
 	@mkdir -p $(OBJ_PATH)
-	$(CC) $(CFLAGS) -c $(INC) -o $@ $<
+	@$(CC) $(CFLAGS) -c $(INC) -o $@ $<
+
+$(LIB):
+	@ar rc $@ $(OBJ)
+	@ranlib $@
 
 clean:
-	/bin/rm -rf $(OBJ)
+	@/bin/rm -rf $(OBJ)
 
 fclean: clean
-	@rmdir $(OBJ_PATH) 2> /dev/null || echo "" > /dev/null
-	/bin/rm -rf $(NAME)
-	/bin/rm -rf $(LIB)
+	@/bin/rm -rf $(OBJ)
+	@/bin/rm -rf $(NAME)
+	@/bin/rm -rf $(LIB)
 
 re: fclean all
 
 test: re
 	@clear
-	$(CC) $(CFLAGS) $(INC) main.c $(LIB)
-	@clear
+	@$(CC) $(CFLAGS) $(INC) main.c $(LIB)
 	./a.out | cat -e
 	@/bin/rm -rf a.out
-	@/bin/rm -rf $(OBJ)
-	@/bin/rm -rf $(LIB)
+	@(cd ./ && $(MAKE) fclean)
 
 norme:
 	@clear
