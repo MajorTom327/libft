@@ -6,7 +6,7 @@
 #    By: vthomas <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/23 14:39:19 by vthomas           #+#    #+#              #
-#    Updated: 2016/01/10 16:13:44 by vthomas          ###   ########.fr        #
+#    Updated: 2016/01/11 20:27:47 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -93,7 +93,7 @@ clean:
 	@/bin/rm -rf $(OBJ)
 
 fclean: clean
-	@/bin/rm -rf $(OBJ)
+	@/bin/rm -rf $(OBJ_PATH)
 	@/bin/rm -rf $(NAME)
 	@/bin/rm -rf $(LIB)
 
@@ -102,7 +102,7 @@ re: fclean all
 test: re
 	@clear
 	@$(CC) $(CFLAGS) $(INC) main.c $(LIB)
-	./a.out | cat -e
+	@./a.out | cat -e
 	@/bin/rm -rf a.out
 	@(cd ./ && $(MAKE) fclean)
 
