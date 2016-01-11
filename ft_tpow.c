@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pow.c                                           :+:      :+:    :+:   */
+/*   ft_tpow.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/23 21:32:41 by vthomas           #+#    #+#             */
-/*   Updated: 2016/01/11 21:51:11 by vthomas          ###   ########.fr       */
+/*   Created: 2016/01/11 21:52:01 by vthomas           #+#    #+#             */
+/*   Updated: 2016/01/11 21:54:42 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_pow(int nb, int pow)
+int	ft_tpow(int nb)
 {
-	if (pow > 1)
-		return (nb * ft_pow(nb, pow - 1));
-	if (pow <= 0)
-		return (1);
-	return (nb);
+	int result;
+
+	result = 0;
+	while (nb % 10)
+	{
+		result++;
+		nb /= 10;
+	}
+	return (result);
 }
