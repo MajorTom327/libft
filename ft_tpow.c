@@ -6,7 +6,7 @@
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/11 21:52:01 by vthomas           #+#    #+#             */
-/*   Updated: 2016/01/11 21:54:42 by vthomas          ###   ########.fr       */
+/*   Updated: 2016/01/12 15:16:06 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_tpow(int nb)
 	int result;
 
 	result = 0;
-	while (nb % 10)
+	while (nb)
 	{
 		result++;
 		nb /= 10;

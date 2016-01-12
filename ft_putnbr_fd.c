@@ -6,16 +6,25 @@
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 19:57:11 by vthomas           #+#    #+#             */
-/*   Updated: 2016/01/11 23:05:03 by vthomas          ###   ########.fr       */
+/*   Updated: 2016/01/12 16:20:11 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static void	ft_print_nb(int n, int fd, int pow)
 {
-	while (pow >= 0 && fd)
+	if (n == 0)
+	{
+		ft_putchar_fd('0', fd);
+		return ;
+	}
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n *= -1;
+	}
+	while (pow >= 0)
 	{
 		ft_putchar_fd(n / ft_pow(10, pow) + '0', fd);
 		n = n % ft_pow(10, pow);
@@ -23,12 +32,17 @@ static void	ft_print_nb(int n, int fd, int pow)
 	}
 }
 
-void	ft_putnbr_fd(int n, int fd)
+void		ft_putnbr_fd(int n, int fd)
 {
 	int tmp;
 	int tmp_pow;
 	int total_pow;
 
+	if (n == -2147483648)
+	{
+		ft_putstr_fd("-2147483648", fd);
+		return ;
+	}
 	tmp = 0;
 	tmp_pow = ft_tpow(n);
 	total_pow = -1;
