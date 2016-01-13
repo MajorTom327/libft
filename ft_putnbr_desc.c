@@ -1,32 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_desc.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/01/12 17:18:44 by vthomas           #+#    #+#             */
-/*   Updated: 2016/01/12 18:39:07 by vthomas          ###   ########.fr       */
+/*   Created: 2016/01/13 16:05:42 by vthomas           #+#    #+#             */
+/*   Updated: 2016/01/13 16:10:14 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-t_list		*ft_lstnew(void const *content, size_t content_size)
-{
-	t_list	*val;
 
-	val = ft_memalloc(sizeof(val));
-	if (val == NULL)
-		return (NULL);
-	if (content == NULL)
-	{
-		val->content = NULL;
-		val->content_size = 0;
-		return (val);
-	}
-	val->content = ft_memalloc(content_size);
-	if (val->content == NULL)
-		return (NULL);
-	ft_memcpy(val->content, content, content_size);
-	return (val);
+void	ft_putnbr_desc(const char *desc, int nb)
+{
+	ft_putstr(desc);
+	ft_putnbr_endl(nb);
 }

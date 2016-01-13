@@ -6,16 +6,14 @@
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/12 17:16:34 by vthomas           #+#    #+#             */
-/*   Updated: 2016/01/12 20:04:31 by vthomas          ###   ########.fr       */
+/*   Updated: 2016/01/13 15:35:41 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_abs(nb)
+int	ft_abs(int nb)
 {
-	if (nb > 0)
-		return (nb);
 	if (nb < 0)
 		return (-nb);
 	return (nb);
