@@ -6,7 +6,7 @@
 #    By: vthomas <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/23 14:39:19 by vthomas           #+#    #+#              #
-#    Updated: 2016/01/13 16:07:22 by vthomas          ###   ########.fr        #
+#    Updated: 2016/01/27 16:04:15 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,11 +64,15 @@ SRC_NAME= ft_memset.c\
 	ft_putstr_fd.c\
 	ft_putendl_fd.c\
 	ft_putnbr_fd.c\
+	ft_lstnew.c\
+	ft_lstdelone.c\
+	ft_lstdel.c\
+	ft_lstadd.c\
+	ft_lstiter.c\
+	ft_lstmap.c\
 	ft_pow.c\
 	ft_tpow.c\
-	ft_abs.c\
-	ft_putnbr_endl.c\
-	ft_putnbr_desc.c
+	ft_abs.c
 OBJ_PATH = ./obj/
 INC_PATH = ./
 INC_NAME = libft.h
@@ -113,11 +117,4 @@ test: re
 norme:
 	@clear
 	@norminette $(SRC) $(INC_PATH)*.h
-
-git:
-	git add $(SRC)
-	git add $(addprefix $(INC_PATH),$(INC_NAME))
-	git add ./Makefile
-	git add ./auteur
-
 .PHONY: fclean clean
