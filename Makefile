@@ -6,7 +6,7 @@
 #    By: vthomas <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/23 14:39:19 by vthomas           #+#    #+#              #
-#    Updated: 2016/01/27 16:04:15 by vthomas          ###   ########.fr        #
+#    Updated: 2016/02/02 18:44:23 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,7 +72,9 @@ SRC_NAME= ft_memset.c\
 	ft_lstmap.c\
 	ft_pow.c\
 	ft_tpow.c\
-	ft_abs.c
+	ft_abs.c\
+	ft_putnbr_endl.c\
+	ft_putnbr_desc.c
 OBJ_PATH = ./obj/
 INC_PATH = ./
 INC_NAME = libft.h
