@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_stradd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/25 19:59:20 by vthomas           #+#    #+#             */
-/*   Updated: 2015/12/20 18:20:35 by vthomas          ###   ########.fr       */
+/*   Created: 2016/08/01 20:32:11 by vthomas           #+#    #+#             */
+/*   Updated: 2016/08/01 20:34:22 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
-int		ft_strcmp(const char *s1, const char *s2)
+void	ft_stradd(char **dst, const char *src)
 {
-	size_t i;
+	char	*tmp;
 
-	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
-		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	tmp = ft_strdup(*dst);
+	ft_strdel(dst);
+	*dst = ft_strnew(ft_strlen(tmp) + ft_strlen(src));
+	ft_strcat(*dst, tmp);
+	ft_strcat(*dst, src);
+	ft_strdel(&tmp);
 }
