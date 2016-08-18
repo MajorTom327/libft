@@ -6,7 +6,7 @@
 /*   By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:14 by vthomas           #+#    #+#             */
-/*   Updated: 2016/08/01 20:29:45 by vthomas          ###   ########.fr       */
+/*   Updated: 2016/08/01 23:56:52 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ char			*ft_strnew(size_t t);
 void			ft_strdel(char **as);
 void			ft_strclr(char *s);
 size_t			ft_strlen(char const *s);
+void			ft_stradd(char **dst, const char *src);
 char			*ft_strdup(const char *s1);
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strncpy(char *dst, const char *src, size_t n);
