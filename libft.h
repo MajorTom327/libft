@@ -6,7 +6,7 @@
 /*   By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:14 by vthomas           #+#    #+#             */
-/*   Updated: 2016/08/18 19:39:53 by vthomas          ###   ########.fr       */
+/*   Updated: 2016/08/19 02:14:08 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,6 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putstr_fd(char const *c, int fd);
 
-void			ft_stradd(char **dst, const char *src);
 char			*ft_strnew(size_t t);
 void			ft_strdel(char **as);
 void			ft_strclr(char *s);
