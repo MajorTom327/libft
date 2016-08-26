@@ -6,7 +6,7 @@
 /*   By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:14 by vthomas           #+#    #+#             */
-/*   Updated: 2016/08/19 02:14:08 by vthomas          ###   ########.fr       */
+/*   Updated: 2016/08/19 03:27:08 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,4 +92,6 @@ int				ft_tpow(int nb);
 int				ft_abs(int nb);
 void			ft_putnbr_endl(int nb);
 void			ft_putnbr_desc(const char *desc, int nb);
+
+char			*free_join(char *dst, char *src);
 #endif
