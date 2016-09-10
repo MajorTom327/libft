@@ -6,7 +6,7 @@
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/13 16:05:42 by vthomas           #+#    #+#             */
-/*   Updated: 2016/01/13 16:10:14 by vthomas          ###   ########.fr       */
+/*   Updated: 2016/08/18 15:56:35 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,6 @@
 void	ft_putnbr_desc(const char *desc, int nb)
 {
 	ft_putstr(desc);
+	ft_putstr(":\t");
 	ft_putnbr_endl(nb);
 }
