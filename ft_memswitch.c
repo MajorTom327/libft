@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strclr.c                                        :+:      :+:    :+:   */
+/*   ft_memswitch.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/25 19:41:09 by vthomas           #+#    #+#             */
-/*   Updated: 2016/08/26 04:50:06 by vthomas          ###   ########.fr       */
+/*   Created: 2016/09/10 20:49:29 by vthomas           #+#    #+#             */
+/*   Updated: 2016/09/10 20:52:09 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
-void	ft_strclr(char *s)
+void	ft_memswitch(void *src, void *dst, size_t l)
 {
-	while (*s)
-	{
-		*s = '\0';
-		s++;;
-	}
+	void *tmp;
+
+	tmp = ft_memalloc(l);
+	if (tmp == NULL)
+		return ;
+	ft_memcpy(tmp, src, l);
+	ft_memcpy(src, dst, l);
+	ft_memcpy(dst, tmp, l);
 }

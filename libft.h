@@ -6,7 +6,7 @@
 /*   By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:14 by vthomas           #+#    #+#             */
-/*   Updated: 2016/08/19 03:27:08 by vthomas          ###   ########.fr       */
+/*   Updated: 2016/09/10 20:52:31 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 void			*ft_memalloc(size_t t);
 void			ft_memdel(void **ap);
+void			ft_memswitch(void *src, void *dst, size_t l);
 
 void			ft_striter(char *s, void (*f)(char *));
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));

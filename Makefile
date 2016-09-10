@@ -6,7 +6,7 @@
 #    By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/23 14:39:19 by vthomas           #+#    #+#              #
-#    Updated: 2016/08/19 02:30:26 by vthomas          ###   ########.fr        #
+#    Updated: 2016/09/10 20:53:16 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ SRC_NAME= ft_memset.c\
 	ft_memmove.c\
 	ft_memchr.c\
 	ft_memcmp.c\
+	ft_memswitch.c\
 	ft_strlen.c\
 	ft_strdup.c\
 	ft_strcpy.c\
