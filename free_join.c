@@ -1,42 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   free_join.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/25 19:51:28 by vthomas           #+#    #+#             */
-/*   Updated: 2016/08/25 16:07:20 by vthomas          ###   ########.fr       */
+/*   Created: 2016/08/19 02:31:27 by vthomas           #+#    #+#             */
+/*   Updated: 2016/08/19 02:31:29 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
-char	*ft_strjoin(char const *a, char const *b)
+char	*free_join(char *dst, char *src)
 {
-	int		i;
-	int		j;
-	char	*r;
+	char	*tmp;
 
-	if (!a || !b)
-		return (NULL);
-	i = 0;
-	j = 0;
-	if (!(r = (char*)malloc(sizeof(char) * (ft_strlen(a) + ft_strlen(b) + 1))))
-		return (NULL);
-	while (a[i] != '\0')
-	{
-		r[j] = a[i];
-		i++;
-		j++;
-	}
-	i = 0;
-	while (b[i] != '\0')
-	{
-		r[j] = b[i];
-		i++;
-		j++;
-	}
-	r[j] = '\0';
-	return (r);
+	tmp = dst;
+	dst = ft_strjoin(dst, src);
+	free(tmp);
+	return (dst);
 }
