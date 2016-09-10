@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/10 21:31:11 by vthomas           #+#    #+#             */
-/*   Updated: 2016/09/10 21:31:24 by vthomas          ###   ########.fr       */
+/*   Created: 2016/09/10 21:35:36 by vthomas           #+#    #+#             */
+/*   Updated: 2016/09/10 21:35:37 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,6 @@ char			*ft_strnew(size_t t);
 void			ft_strdel(char **as);
 void			ft_strclr(char *s);
 size_t			ft_strlen(char const *s);
-void			ft_stradd(char **dst, const char *src);
 char			*ft_strdup(const char *s1);
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strncpy(char *dst, const char *src, size_t n);
