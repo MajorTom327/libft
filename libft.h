@@ -6,7 +6,7 @@
 /*   By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 21:35:36 by vthomas           #+#    #+#             */
-/*   Updated: 2017/05/16 15:00:20 by vthomas          ###   ########.fr       */
+/*   Updated: 2017/05/16 18:03:54 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# define BUFF_SIZE 100
 
 typedef struct	s_list
 {
@@ -55,6 +56,7 @@ void			ft_putnbr(int n);
 void			ft_putnbr_fd(int n, int fd);
 void			ft_putnbr_endl(int nb);
 void			ft_putnbr_desc(const char *desc, int nb);
+void			ft_print_mem(unsigned char * mem, size_t len);
 
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
@@ -105,5 +107,8 @@ void			print_log(char *str);
 void			print_warning(char *str);
 void			print_error(char *str);
 void			print_info(char *str);
+
+int				get_next_line(const int fd, char **line);
+
 
 #endif

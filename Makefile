@@ -6,13 +6,14 @@
 #    By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/10 21:34:05 by vthomas           #+#    #+#              #
-#    Updated: 2017/05/16 15:26:16 by vthomas          ###   ########.fr        #
+#    Updated: 2017/05/16 18:04:11 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft
 SRC_PATH = ./src/
-SRC_NAME =	info/message_info.c\
+SRC_NAME =	get_next_line.c\
+			info/message_info.c\
 			list/ft_lstadd.c\
 			list/ft_lstdel.c\
 			list/ft_lstdelone.c\
@@ -32,6 +33,7 @@ SRC_NAME =	info/message_info.c\
 			mem/ft_memmove.c\
 			mem/ft_memset.c\
 			mem/ft_memswitch.c\
+			print/ft_print_mem.c\
 			print/ft_putchar.c\
 			print/ft_putchar_fd.c\
 			print/ft_putendl.c\
