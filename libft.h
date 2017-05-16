@@ -6,7 +6,7 @@
 /*   By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 21:35:36 by vthomas           #+#    #+#             */
-/*   Updated: 2016/10/27 15:59:27 by vthomas          ###   ########.fr       */
+/*   Updated: 2017/05/16 15:00:20 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,5 +100,10 @@ char			*ft_strstr(const char *s1, const char *s2);
 char			*ft_strnstr(const char *s1, const char *s2, size_t len);
 int				ft_strcmp(const char *s1, const char *s2);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
+
+void			print_log(char *str);
+void			print_warning(char *str);
+void			print_error(char *str);
+void			print_info(char *str);
 
 #endif
