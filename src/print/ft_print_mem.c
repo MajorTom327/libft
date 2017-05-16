@@ -6,7 +6,7 @@
 /*   By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/16 17:51:47 by vthomas           #+#    #+#             */
-/*   Updated: 2017/05/16 18:58:31 by vthomas          ###   ########.fr       */
+/*   Updated: 2017/05/16 19:38:50 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,9 +63,8 @@ static void	sf_respace(int l)
 	int	i;
 
 	i = 0;
-	while (i++ < l)
+	while (i++ <= l - (l % 2))
 		ft_putstr("  ");
-	ft_putchar(' ');
 }
 
 void		ft_print_mem(unsigned char *mem, size_t len)
