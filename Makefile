@@ -6,7 +6,7 @@
 #    By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/10 21:34:05 by vthomas           #+#    #+#              #
-#    Updated: 2017/05/16 15:01:03 by vthomas          ###   ########.fr        #
+#    Updated: 2017/05/16 15:26:16 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -106,6 +106,7 @@ $(OBJ_PATH)%.o: $(SRC_PATH)%.c
 	@mkdir -p $(OBJ_PATH)/str/char
 	@mkdir -p $(OBJ_PATH)/str/conv
 	@mkdir -p $(OBJ_PATH)/str/str
+	@mkdir -p $(OBJ_PATH)/info
 	$(CC) $(CFLAGS) -c $(INC) -o $@ $<
 
 $(LIB):
