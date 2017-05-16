@@ -6,7 +6,7 @@
 /*   By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 21:35:36 by vthomas           #+#    #+#             */
-/*   Updated: 2017/05/16 18:03:54 by vthomas          ###   ########.fr       */
+/*   Updated: 2017/05/16 19:46:35 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ int				ft_isprint(int c);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 
+float			ft_atof(char *str);
 int				ft_atoi(const char *str);
 char			*ft_itoa(int n);
 

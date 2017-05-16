@@ -6,7 +6,7 @@
 #    By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/10 21:34:05 by vthomas           #+#    #+#              #
-#    Updated: 2017/05/16 18:04:11 by vthomas          ###   ########.fr        #
+#    Updated: 2017/05/16 19:46:17 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,6 +51,7 @@ SRC_NAME =	get_next_line.c\
 			str/char/ft_isprint.c\
 			str/char/ft_tolower.c\
 			str/char/ft_toupper.c\
+			str/conv/ft_atof.c\
 			str/conv/ft_atoi.c\
 			str/conv/ft_itoa.c\
 			str/str/ft_freejoin.c\
