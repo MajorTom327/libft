@@ -6,12 +6,11 @@
 /*   By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 16:39:20 by vthomas           #+#    #+#             */
-/*   Updated: 2017/05/15 15:56:50 by aviau            ###   ########.fr       */
+/*   Updated: 2017/05/16 15:26:48 by vthomas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
-#include <rt.h>
 
 void	print_log(char *str)
 {
