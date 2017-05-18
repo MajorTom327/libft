@@ -6,7 +6,7 @@
 /*   By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 21:35:36 by vthomas           #+#    #+#             */
-/*   Updated: 2017/05/16 19:46:35 by vthomas          ###   ########.fr       */
+/*   Updated: 2017/05/18 21:09:30 by aviau            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ void			ft_memdel(void **ap);
 void			*ft_memmove(void *dst, const void *src, size_t n);
 void			*ft_memset(void *b, int c, size_t len);
 void			ft_memswitch(void *src, void *dst, size_t l);
+void			*ft_memjoin(unsigned char *dst, unsigned char *src, int sdst, int ssrc);
 
 void			ft_putchar(char c);
 void			ft_putstr(char const *c);

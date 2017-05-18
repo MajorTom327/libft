@@ -6,7 +6,7 @@
 #    By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/10 21:34:05 by vthomas           #+#    #+#              #
-#    Updated: 2017/05/16 19:46:17 by vthomas          ###   ########.fr        #
+#    Updated: 2017/05/18 21:09:09 by aviau            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ SRC_NAME =	get_next_line.c\
 			mem/ft_memmove.c\
 			mem/ft_memset.c\
 			mem/ft_memswitch.c\
+			mem/ft_memjoin.c\
 			print/ft_print_mem.c\
 			print/ft_putchar.c\
 			print/ft_putchar_fd.c\
