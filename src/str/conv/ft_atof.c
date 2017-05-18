@@ -6,7 +6,7 @@
 /*   By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/16 19:41:40 by vthomas           #+#    #+#             */
-/*   Updated: 2017/05/16 19:53:46 by vthomas          ###   ########.fr       */
+/*   Updated: 2017/05/18 21:20:31 by aviau            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,5 @@ float	ft_atof(char *str)
 	dec = ft_atoi(&dot[1]);
 	ret = (float)ent;
 	ret += (float)dec / (float)ft_pow(10, ft_tpow(dec));
-	printf("%d.%d %f\n", ent, dec, ret);
 	return (ret);
 }
