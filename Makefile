@@ -6,7 +6,7 @@
 #    By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/09/10 21:34:05 by vthomas           #+#    #+#              #
-#    Updated: 2017/05/18 21:09:09 by aviau            ###   ########.fr        #
+#    Updated: 2017/05/19 09:17:27 by aviau            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -88,7 +88,7 @@ OBJ_PATH = ./obj/
 INC_PATH = ./
 INC_NAME = libft.h
 INC = $(addprefix -I, $(INC_PATH))
-CC = clang
+CC = gcc -g
 CFLAGS = -Werror -Wall -Wextra -Ofast -Os
 OBJ_NAME = $(SRC_NAME:.c=.o)
 SRC = $(addprefix $(SRC_PATH),$(SRC_NAME))
